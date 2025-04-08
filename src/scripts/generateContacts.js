@@ -7,7 +7,7 @@ const generateContacts = async (number) => {
 
   // генеруємо нові фейкові контакти
   const newContacts = Array.from({ length: number }, () => createFakeContact());
-  console.log([...contacts, ...newContacts]);
+
   // передаємо ті що і нові були контакти
   await writeContacts([...contacts, ...newContacts]);
 };
